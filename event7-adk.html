@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event 7: Google ADK Hackathon</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .event-wrapper {
+      max-width: 1320px;
+      margin: 0;
+    }
+    .event-wrapper header {
+      border-bottom: 4px solid crimson;
+      padding-bottom: 1rem;
+      margin-bottom: 1.5rem;
+      max-width: 1320px;
+      margin-inline: auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      align-items: start;
+    }
+    .content-grid section.card img {
+      max-width: 100%;
+      height: auto;
+    }
+    @media (max-width: 800px) {
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <div id="sidebar"></div>
+    <main class="content">
+      <div class="event-wrapper">
+        <header>
+          <h1>Event 7: Google ADK Hackathon</h1>
+          <p>Date: 23/06/2025</p>
+        </header>
+        <div class="content-grid">
+          <div class="left-col">
+            <section class="card">
+<h2>Summary</h2>
+<p>This event was a Hackathon competition hosted by Google, using their newly released (earlier this year) Agent Development Kit (ADK) platform. Whilst I did not complete a final project for submission, my goal was to just learn about agent development and the platform with some hands-on practice. This is pretty novel technology so making a strong submission in a short time frame was a bit out of the scope of my abilities, but there is a very good chance this technology is a big part of the future so learning about it seemed very valuable. This involved completing a tutorial on creating an agent that can read and summarise the top posts from specific subreddits on www.reddit.com. The tutorial was focussed on gamedev subreddits, but I modified my agent to check for politics and world news events. This taught me basic skills on how to engage with and use the ADK platform, how to interact with various APIs, and gave me some insight on the types of things this technology might be used for going forward.</p>
+</section>
+            <section class="card">
+<h2>Additional Comments</h2>
+<p>The way this platform seems to work is you connect to a well known LLM using their API, provide a set of instructions that define how the agent is meant to operate, and also provide ‘tools’ which it uses to complete those tasks (in this case we defined one tool, which was a function that used reddit’s API to retrieve the top 5 posts on any given subreddit). As it is still a LLM, it is able to provide various other functionality (i.e. generating a tweet, or commenting on political tone, as you can see on the right). <br/><br/>You can run the agent in a local interface and interact with it as you would the usual commercially available LLMs, as seen in the evidence screenshots. Whilst I have only created one agent here, the intended purpose of the Hackathon and the technology in general is to have multiple agents that perform roles and interface to solve or offer a solution to complex problems or workflows.</p>
+</section>
+          </div>
+          <div class="right-col">
+            <section class="card link">
+<h2>Links</h2>
+<p><a href="https://developers.googleblog.com/en/agent-development-kit-easy-to-build-multi-agent-applications/" target="_blank">Google ADK Introduction</a></p>
+<p><a href="https://cloud.google.com/blog/topics/developers-practitioners/join-the-agent-development-kit-hackathon-with-google-cloud" target="_blank">Google ADK Hackathon</a></p>
+</section>
+            <section class="card">
+<h2>Evidence</h2>
+<img alt="Evidence of completion/participation" src="images/event7_1.png"/>
+<img alt="Evidence of completion/participation" src="images/event7_2.png"/>
+<img alt="Evidence of completion/participation" src="images/event7_3.png"/>
+</section>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>Employability Profile — Submitted for Professional Practice III, University of Adelaide, by Sam Murray, a1195474</p>
+      </footer>
+    </main>
+  </div>
+  <script>
+    fetch('sidebar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('sidebar').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

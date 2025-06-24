@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event 4: LinkedIn: Intro to AI</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .event-wrapper {
+      max-width: 1320px;
+      margin: 0;
+    }
+    .event-wrapper header {
+      border-bottom: 4px solid crimson;
+      padding-bottom: 1rem;
+      margin-bottom: 1.5rem;
+      max-width: 1320px;
+      margin-inline: auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      align-items: start;
+    }
+    .content-grid section.card img {
+      max-width: 100%;
+      height: auto;
+    }
+    @media (max-width: 800px) {
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <div id="sidebar"></div>
+    <main class="content">
+      <div class="event-wrapper">
+        <header>
+          <h1>Event 4: LinkedIn: Intro to AI</h1>
+          <p>Date: 13/06/2025</p>
+        </header>
+        <div class="content-grid">
+          <div class="left-col">
+            <section class="card">
+<h2>Summary</h2>
+<p>This activity was another LinkedIn Learning course, this time as an introduction to artificial intelligence, but it was aimed towards managers/product managers/directors and executives, rather than being focussed on the technical and theoretical aspects I have learnt at Uni. It gave me insight as to how these real companies can approach the rapid rise in AI, and how the technology is likely to affect their workplace. My primary takeaways were that defining intelligence is difficult and somewhat subjective, and one of the biggest issues the industry is facing regarding AI is that it is hard for humans to understand where some of the patterns AI finds are coming from - this is problematic for things like healthcare, or financial advice, where you must be able to justify the advice given by your AI tools.</p>
+</section>
+            <section class="card">
+<h2>Additional Comments</h2>
+<p>I found the Chinese room argument (analogy?) quite interesting. The premise is that you have someone locked in a room and someone puts in English words into the room. The person inside takes the word, matches it using a book or a set of instructions inside the room to the Chinese translation, and then spits it back out. To the outside observer, this could appear that the person in the room is intelligent - that they know the Chinese language. However they are just matching patterns, and whilst the results are the same, they have no true understanding of the language or what they are doing.</p>
+</section>
+          </div>
+          <div class="right-col">
+            <section class="card link">
+<h2>Links</h2>
+<p><a href="https://www.linkedin.com/learning/certificates/f60f40983f43117ba05a4ed9fcf5080d2d699aad05919b65cdea749cd73e597e?trk=share_certificate" target="_blank">Certificate link</a></p>
+<p><a href="https://www.linkedin.com/learning/introduction-to-artificial-intelligence/why-you-need-to-know-about-artificial-intelligence?resume=false" target="_blank">Introduction to Artificial Intelligence</a></p>
+</section>
+            <section class="card">
+<h2>Evidence</h2>
+<img alt="Evidence of completion/participation" src="images/event4_1.png"/>
+</section>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>Employability Profile — Submitted for Professional Practice III, University of Adelaide, by Sam Murray, a1195474</p>
+      </footer>
+    </main>
+  </div>
+  <script>
+    fetch('sidebar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('sidebar').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

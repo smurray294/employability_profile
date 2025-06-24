@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event 5: LinkedIn: Scrum Basics</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .event-wrapper {
+      max-width: 1320px;
+      margin: 0;
+    }
+    .event-wrapper header {
+      border-bottom: 4px solid crimson;
+      padding-bottom: 1rem;
+      margin-bottom: 1.5rem;
+      max-width: 1320px;
+      margin-inline: auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      align-items: start;
+    }
+    .content-grid section.card img {
+      max-width: 100%;
+      height: auto;
+    }
+    @media (max-width: 800px) {
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <div id="sidebar"></div>
+    <main class="content">
+      <div class="event-wrapper">
+        <header>
+          <h1>Event 5: LinkedIn: Scrum Basics</h1>
+          <p>Date: 15/06/2025</p>
+        </header>
+        <div class="content-grid">
+          <div class="left-col">
+            <section class="card">
+<h2>Summary</h2>
+<p>Another LinkedIn Learning activity that I completed online. This one was an introductory lesson on Scrum, however it was from the perspective of someone already in the industry, and why/how others in the industry are able to adopt this newer agile framework. I found this perspective to be quite important - we get taught why agile is better at Uni, but it is different hearing from someone who faced real world challenges that agile helped overcome. The motivating factor was the ability to have a regular deliverable, and have the ability to ‘fail fast’. With an agile framework, companies can know early on if a project is worth the time and money, rather than having to wait for development to finish.</p>
+</section>
+            <section class="card">
+<h2>Additional Comments</h2>
+<p>It was also highlighted how brief and direct scrum meetings are meant to be, to the point of no one even sitting down. This was covered in another module we did this semester, but the idea of trust being essential for teams was mentioned, as it is important for the team to know if you have failed to meet some expectation, either set by yourself, sprint master or stakeholder, and you need to feel comfortable enough to share what has happened, rather than try to hide it. </p>
+</section>
+          </div>
+          <div class="right-col">
+            <section class="card link">
+<h2>Links</h2>
+<p><a href="https://www.linkedin.com/learning/certificates/7fecc75edd78085a78a8820b9fc0d015d132cc85f572ee3a19db0707becbc43b?trk=share_certificate" target="_blank">Certificate link</a></p>
+<p><a href="https://www.linkedin.com/learning/scrum-the-basics/practicing-scrum-in-your-work-environment?resume=false" target="_blank">Scrum: The Basics</a></p>
+</section>
+            <section class="card">
+<h2>Evidence</h2>
+<img alt="Evidence of completion/participation" src="images/event5_1.png"/>
+</section>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>Employability Profile — Submitted for Professional Practice III, University of Adelaide, by Sam Murray, a1195474</p>
+      </footer>
+    </main>
+  </div>
+  <script>
+    fetch('sidebar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('sidebar').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

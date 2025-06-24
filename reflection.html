@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reflection</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .reflection-wrapper {
+      max-width: 1320px;
+      margin: 0;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .readable {
+      max-width: 800px;
+    }
+
+    header {
+      border-bottom: 4px solid crimson;
+      padding-bottom: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    @media (max-width: 800px) {
+      .readable {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <div id="sidebar"></div>
+
+    <main class="content">
+      <div class="reflection-wrapper">
+        <div class="readable">
+          <header>
+            <h1>Personal Reflection</h1>
+            <p>Sam Murray, a1195474</p>
+          </header>
+
+          <section class="card reflection">
+            <h2>Pre-Reflection (205 words)</h2>
+            <p>I felt confident regarding my general professional and personal skills going into this course, however a recent diagnosis of a disability had left me questioning whether I could complete this course, let alone join the workforce. I’ve performed well academically but I have a distinct lack of job experience for someone my age, and whilst I would tell myself that this was due to circumstances outside of my control, it still contributed to my worries about professional life.</p>
+            <p>Engaging with this course, the people who run it, and the various industry events throughout the semester has helped shift this perspective. I found there is immense support for those who need it, and through the Graduate Application task that there are companies who seek to employ and enable these individuals. Reflecting on activities like the Introvert course, I’ve found that we can reframe differences as strengths in the workplace, and this has given me a lot of relief and hope about my future. Events such as the Hour of Code, the Hackathon, and the Hugging Face courses, have helped me realise that being a lifelong learner is invaluable. Of all the skills I’ve learnt at Uni, this might be the most important going into the industry.</p>
+          </section>
+
+          <section class="card reflection">
+            <h2>Post Reflection (813 words)</h2>
+            <p>Two events stood out to me for this reflection; the Hour of Code and the ACS Tech debate. They both offered valuable learning experiences and upon reflection, insights into my strengths and weaknesses.</p>
+            <p><strong>Hour of Code</strong> involved completing the Hour of Code Rosebudai online tutorial. My task was to build a Mario-like platformer from start to finish using Phaser by interacting with their AI, “Rosie”. I provided the prompts to Rosie, and incrementally built the game.</p>
+            <p>I became frustrated mid-way through, when Rosie produced errors and offered little help debugging. I had two options, I could copy a working ‘checkpoint’, or debug it myself. I chose to debug to better understand the process, rather than just copying. To keep vibe coding, I used another AI, Gemini, to fix the issues and implement the rest of the features.</p>
+            <p>The outcome was a working game created through vibe coding, and a strong understanding of the code. Although it took longer, I felt proud that I solved all the challenges whilst staying true to the theme of the exercise. Perhaps my instinct to ‘do it myself’ with another AI rather than asking for help, could use some further investigation or thought.</p>
+            <p>I learnt about vibe coding, and gained a deeper understanding of its capabilities and limitations. I learnt different AIs have different strengths - Rosie was limited but upfront with its limitations. Gemini was powerful but prone to hallucinations, reminding me that effective AI use still requires a solid grasp of the underlying code. I found that both tools were much faster than I am at detecting a spelling or syntax error. Going forward I will definitely make use of this knowledge, and will keep an open mind about when to use AI and when to use my personal skills. I think it will be important to not be overconfident - the idea of being able to tackle any problem in any language because I have an AI helper is powerful, but there are many limitations found when problems get too complex, and seeking help from others might be a better approach.</p>
+            <p>This activity boosted my confidence in problem-solving, especially with unfamiliar languages and tools. It helped counter my self doubt, proving to myself that I can adapt and overcome these kinds of situations.</p>
+            <p><strong>The debate</strong> was hosted by ACS and involved two teams of students, debating two different prepared topics. I participated online, so my interaction was reading the chat, and voting at the end of each debate. My task was to consider the arguments being presented, formulate my own opinion, and vote for a winner. I took notes, gave thought to the arguments presented, contrasted with my own understanding, and also reflected upon my own public speaking skills.</p>
+            <p>I found myself more focused on how the students presented rather than their arguments, likely due to my own self-consciousness about public speaking. Whilst I did end up choosing a winner and considering my own stance for each debate topic, my focus was definitely on how they were speaking, which prompted further reflection.</p>
+            <p>My learning from this activity was split into two distinct areas. Firstly, upon reflection of the points raised during the debate and the summary by the judges, I learnt that these topics are not black and white. It is not open source or proprietary, and it is not work experience or certifications. It needs to be a mix of both which will provide the most successful solutions in the workplace. I think this general takeaway is going to be true in many situations, and I should apply this balance in the future.</p>
+            <p>Secondly, I reflected on the differences in public speaking displayed by the students. Some students were not strong, used filler words and did not project well. Others spoke confidently when prepared, but struggled with improvisation, where they started introducing filler words. A few stood out as confident speakers, using humour, body language, and clear delivery. I was quite envious of them, as I would put myself in the second category. I think a large part of that is lack of practice, almost all my public speaking has been prepared, so I am unsure of my improvisation ability. I think in the future it will be important for me to practice. With more practice, this will become another aspect of professional life that I feel comfortable with.</p>
+            <p>I am definitely more aware of my perceived weakness in public speaking as a result of this experience. I am trying not to frame it as a weakness, but rather an area I still have room to improve on in the future.</p>
+            <p>Reflecting on these activities has helped me identify areas to grow, such as public speaking and balancing independence with collaboration. Most importantly, it’s shifted my mindset - I now believe participating and contributing meaningfully in the workforce, despite my disability, is a real and achievable goal.</p>
+          </section>
+
+          <footer>
+            <p>Employability Profile — Submitted for Professional Practice III, University of Adelaide, by Sam Murray, a1195474</p>
+          </footer>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    fetch('sidebar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('sidebar').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

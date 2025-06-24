@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event 1 – LinkedIn Introvert Module</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .event-wrapper {
+      max-width: 1320px;
+      margin: 0;
+    }
+
+    .event-wrapper header {
+      border-bottom: 4px solid crimson;
+      padding-bottom: 1rem;
+      margin-bottom: 1.5rem;
+      max-width: 1320px;
+      margin-inline: auto; /* centers within content like Summary/Evidence */
+      padding-left: 1rem;   /* aligns visually with sidebar menu text */
+      padding-right: 1rem;
+    }
+
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      align-items: start;
+    }
+
+    .content-grid section.card img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 800px) {
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <div id="sidebar"></div>
+
+    <main class="content">
+      <div class="event-wrapper">
+        <header>
+          <h1>Event 1: LinkedIn Introvert Module</h1>
+          <p>Date: 04/04/2025</p>
+        </header>
+
+        <div class="content-grid">
+          <div class="left-col">
+            <section class="card">
+              <h2>Summary</h2>
+              <p>This activity involved completing a LinkedIn Learning course on the experiences of introverts and how to frame their unique perspective as strength(s) in the workplace.
+              I worked through the course online, and as an introvert, found it quite interesting. I did realise I have always sort of viewed my introversion as the 'bad one' when 
+              compared to extroversion. I had never heard it spoken about in this context before, and whilst it makes complete sense that companies seek to maximise the strengths of all
+              their employees, it was a refreshing and somewhat empowering experience. It has definitely given me a bit to think about in terms of embracing and supporting what I need to
+              do to recharge my battery, and how that will affect my performance in the workplace.</p>
+            </section>
+
+            <section class="card">
+              <h2>Additional Comments</h2>
+              <p>One thing I did find interesting that they didn't really touch on, is that it is always framed as either introvert or extrovert. I would have thought, like many other things in life,
+              that this would be another spectrum, and you'd often find people who are in the middle, or who exhibit traits from both sides. I think this is something that could be explored
+              further, as I know I have traits from both sides, so it is definitely something I need to keep in mind in the future.</p>
+            </section>
+          </div>
+
+          <div class="right-col">
+            <section class="card link">
+              <h2>Links</h2>
+              <p><a href="https://www.linkedin.com/learning/certificates/875b86a97821671c48e66addc25df81e742bcbcda4203063d192e25962cf48d0?trk=share_certificate" target="_blank">Certificate link</a></p>
+              <p><a href="https://www.linkedin.com/learning/an-introvert-s-guide-to-succeeding-in-the-workplace/introversion-is-an-asset" target="_blank">An Introvert's Guide to Succeeding in the Workplace</a></p>
+            </section>
+
+            <section class="card">
+              <h2>Evidence</h2>
+              <img src="images/event1_1.png" alt="Screenshot of LinkedIn course completion" />
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>Employability Profile — Submitted for Professional Practice III, University of Adelaide, by Sam Murray, a1195474</p>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    fetch('sidebar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('sidebar').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

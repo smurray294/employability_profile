@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event 6: LinkedIn: Git Essential Training</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .event-wrapper {
+      max-width: 1320px;
+      margin: 0;
+    }
+    .event-wrapper header {
+      border-bottom: 4px solid crimson;
+      padding-bottom: 1rem;
+      margin-bottom: 1.5rem;
+      max-width: 1320px;
+      margin-inline: auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      align-items: start;
+    }
+    .content-grid section.card img {
+      max-width: 100%;
+      height: auto;
+    }
+    @media (max-width: 800px) {
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <div id="sidebar"></div>
+    <main class="content">
+      <div class="event-wrapper">
+        <header>
+          <h1>Event 6: LinkedIn: Git Essential Training</h1>
+          <p>Date: 16/06/2025</p>
+        </header>
+        <div class="content-grid">
+          <div class="left-col">
+            <section class="card">
+<h2>Summary</h2>
+<p>This was the last LinkedIn Learning module that I completed. It was beginner training for Git, the distributed version control system used throughout the industry. This is something that I’ve never had any formal training in throughout my degree. This course covered quite a lot, first introducing the motivations of why we need version control (explaining the example that I’m sure every single programmer can relate to, where you have some code in a file, and then you copy it and rename it so you can test something or add something else, and then you do it again, and again, and again…) and how Git came to be. It taught all the fundamental skills and I feel has put me in a good position to feel confident using Git going forward.</p>
+</section>
+            <section class="card">
+<h2>Additional Comments</h2>
+<p>The course also taught how to install and configure git, setting up a repository, ‘staging’ and committing a file, push and pulling, branches (and pull requests) and merges, and merge conflicts. Merge conflicts have been my biggest issue using Git at Uni, and it was interesting to see a professional’s take on how to resolve them. I wasn’t expecting completely deleting everything in the repo and starting again from the local as an actual professional solution!</p>
+</section>
+          </div>
+          <div class="right-col">
+            <section class="card link">
+<h2>Links</h2>
+<p><a href="https://www.linkedin.com/learning/certificates/e8dd33f2ac22ab62c0dc2c9eef09cfea89aee80eb21fb1f32b74268801115344?trk=share_certificate" target="_blank">Certificate link</a></p>
+<p><a href="https://www.linkedin.com/learning/git-essential-training-25677984/get-started-with-git?resume=false" target="_blank">Git Essential Training</a></p>
+</section>
+            <section class="card">
+<h2>Evidence</h2>
+<img alt="Evidence of completion/participation" src="images/event6_1.png"/>
+</section>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>Employability Profile — Submitted for Professional Practice III, University of Adelaide, by Sam Murray, a1195474</p>
+      </footer>
+    </main>
+  </div>
+  <script>
+    fetch('sidebar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('sidebar').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

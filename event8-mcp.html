@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event 8: Hugging Face: MCP Course</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .event-wrapper {
+      max-width: 1320px;
+      margin: 0;
+    }
+    .event-wrapper header {
+      border-bottom: 4px solid crimson;
+      padding-bottom: 1rem;
+      margin-bottom: 1.5rem;
+      max-width: 1320px;
+      margin-inline: auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      align-items: start;
+    }
+    .content-grid section.card img {
+      max-width: 100%;
+      height: auto;
+    }
+    @media (max-width: 800px) {
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <div id="sidebar"></div>
+    <main class="content">
+      <div class="event-wrapper">
+        <header>
+          <h1>Event 8: Hugging Face: MCP Course</h1>
+          <p>Date: 23/06/2025</p>
+        </header>
+        <div class="content-grid">
+          <div class="left-col">
+            <section class="card">
+<h2>Summary</h2>
+<p>This course is an introduction to MCP (model context protocol) which is a pretty new technology, introduced last year. The goal of MCP is to provide a consistent standard to allow AI agents to interface with tools, services and data. This makes the lives of users and developers much easier, as it converts the MxN problem (M agents need to be able to interact, ie have different APIs, with N different things) into an M+N problem (M agents connect to a server which connects to N different things, with the server handling the interfacing). It is not widely adopted yet, but does seem to be exceptionally powerful. I worked through the course online and then completed the certification test at the end.</p>
+</section>
+            <section class="card">
+<h2>Additional Comments</h2>
+<p>My main takeaway from the course is that the only challenge or downside to this protocol is adopt-ability - it is all positives for everyone involved, as long as it is widely adopted and used throughout the industry. The rest of the course was mostly introductory, introducing the actors involved (host, client, server), the architecture, and the types of messages and communication between the different actors. Whilst for small scale projects I can see why this might not be necessary, it seems like people in the industry are imagining a world where many different AI agents are communicating with each other and interacting with other information sources online, and in that situation a protocol like this is basically required and has been implemented in similar situations in the past.<br/><br/> Interestingly, the protocol allows the MCP server (who your agent queries when it wants to interact with something) to take the result and send it back to the client and ask for feedback etc. This allows a level of interaction/control from the human user, but it isn’t a stretch to imagine the client being another agent, communicating back and forth, refining the output. Another interesting thing I found was that, whilst historically through Uni it was very important to get the code right, comments were mainly for our own/other human reference, but in the world of agent development, the comments explaining what a function or method does are fundamental - the agents need them to understand the context and functionality of a function.</p>
+</section>
+          </div>
+          <div class="right-col">
+            <section class="card link">
+<h2>Links</h2>
+<p><a href="https://huggingface.co/learn/mcp-course/unit0/introduction" target="_blank">Hugging Face MCP Course</a></p>
+</section>
+            <section class="card">
+<h2>Evidence</h2>
+<img alt="Evidence of completion/participation" src="images/event8_1.png"/>
+<img alt="Evidence of completion/participation" src="images/event8_2.png"/>
+</section>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>Employability Profile — Submitted for Professional Practice III, University of Adelaide, by Sam Murray, a1195474</p>
+      </footer>
+    </main>
+  </div>
+  <script>
+    fetch('sidebar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('sidebar').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

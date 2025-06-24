@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Industry Engagement Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .home-wrapper {
+      max-width: 1320px;
+      margin: 0;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .readable {
+      max-width: 800px;
+    }
+
+    header {
+      border-bottom: 4px solid crimson;
+      padding-bottom: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    @media (max-width: 800px) {
+      .home-wrapper {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+      .readable {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <div id="sidebar"></div>
+
+    <main class="content">
+      <div class="home-wrapper">
+        <div class="readable">
+          <header>
+            <h1>Employability Profile</h1>
+            <p>Sam Murray, a1195474</p>
+          </header>
+
+          <section>
+            <div class="card">
+              <h2>About This Website</h2>
+              <p>This site documents my participation in professional and industry-related activities as part of PPIII (Semester 1, 2025). It includes my reflections and evidence of 10 industry-related learning activities, including online events, coding tutorials, and self-paced microcredentials. 
+                You can navigate around using the menu on the left. Hopefully it is all straightforward and clear, but just in case, here is a direct link to the reflections for the assessment:</p>
+              <p><a href="reflection.html">Reflection</a></p>
+              <p>You'll also find I've included a bit of extra information on each event. I know this was not required, but I'd kept notes so I felt like I may as well include them. Feel free to skip them!</p>
+            </div>
+          </section>
+
+          <footer>
+            <p>Employability Profile — Submitted for Professional Practice III, University of Adelaide, by Sam Murray, a1195474</p>
+          </footer>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    fetch('sidebar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('sidebar').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

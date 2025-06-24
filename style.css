@@ -1,0 +1,163 @@
+/* Base Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #00274d; /* Deep navy for headings and text */
+  line-height: 1.6;
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Layout Container */
+.layout {
+  display: flex;
+  width: 100%;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+  width: 220px;
+  background-color: #00274d;
+  color: white;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.sidebar h2 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin-bottom: 0.8rem;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+  color: #d50032; /* Crimson highlight */
+}
+
+/* Main Content Area */
+.content {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Header */
+header {
+  margin-bottom: 2rem;
+  border-bottom: 3px solid #d50032;
+  padding-bottom: 1rem;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #00274d;
+}
+
+header p {
+  color: #555;
+}
+
+/* Cards */
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  border-left: 5px solid #00274d;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px; /* adjust to your preferred size */
+  object-fit: contain;
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.card {
+  margin-bottom: 1rem; /* reduce spacing between cards */
+  padding: 1rem 1.25rem; /* slightly tighter padding */
+}
+
+.card h2 {
+  margin-top: 0.25rem; /* reduce space above headers */
+  margin-bottom: 0.5rem; /* tighten below header */
+}
+
+.card.reflection {
+  border-left-color: #d50032;
+}
+
+.card h3, .card h4 {
+  margin-bottom: 0.5rem;
+  color: #00274d;
+}
+
+.card img {
+  max-width: 100%;
+  margin-top: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Section Headings */
+section > h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #00274d;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.3rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #777;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.page-grid {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  gap: 1rem;
+}
+
+.page-grid .spacer {
+  /* Just an empty column to balance the layout visually */
+}
+
+.page-grid .content {
+  max-width: 800px;
+  margin: 0 auto;
+}

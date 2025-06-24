@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event 3: Hour of Code with Rosebud.ai</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .event-wrapper {
+      max-width: 1320px;
+      margin: 0;
+    }
+    .event-wrapper header {
+      border-bottom: 4px solid crimson;
+      padding-bottom: 1rem;
+      margin-bottom: 1.5rem;
+      max-width: 1320px;
+      margin-inline: auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      align-items: start;
+    }
+    .content-grid section.card img {
+      max-width: 100%;
+      height: auto;
+    }
+    @media (max-width: 800px) {
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <div id="sidebar"></div>
+    <main class="content">
+      <div class="event-wrapper">
+        <header>
+          <h1>Event 3: Hour of Code with Rosebud.ai</h1>
+          <p>Date: 15/06/2025</p>
+        </header>
+        <div class="content-grid">
+          <div class="left-col">
+            <section class="card">
+<h2>Summary</h2>
+<p>“Hour of code” is an initiative organised by code.org, and suggested to me by a friend.The basic idea is introducing coding activities in a digestible, 1 hour block, to teach fundamental ideas/practices. It seems fantastic, and I chose to complete a ‘vibe coding’ focused one, as it is an emergent area due to AI, and one that I have only interacted with briefly. Many different companies contribute their own ‘Hour of Code’ - there are ones related to Minecraft, and Disney movies, for example. In this Hour of Code with Rosebud.ai, I built a Mario-like platformer by vibe coding with their AI. In my case, I had to go a bit beyond and employ another AI, as I ran into some issues. This was a good experience, as it introduced me to complications I’m likely going to face in the workplace, and it was good to know I could work through them.</p>
+</section>
+            <section class="card">
+<h2>Additional Comments</h2>
+<p>You should be able to play the game embedded on the right.<br/><br/> This ended up being quite interesting, even if it was a project for kids. About half-way through the tutorial, I was having some errors just following and copy-pasting the prompts for “Rosie” (their AI). My coins were not spinning and my spiders were not reversing direction! Rather than just revert to their template code blocks, which is I’m sure the intended way to handle errors (“Rosie” does not seem very good at debugging, or, to be honest, any prompts that aren’t almost exactly what is specified in the tutorial), I decided to continue to vibe code with Gemini to solve the rest of the tutorial. 
+
+<br/><br/>It took a bit of time but we got there in the end, with fully animated coins and enemies, an animated player character that can die to and also kill the enemies, coin collection and counter, physics, key collection and level completion (and level transition). Honestly a very cool project, and whilst I had some issues, still taught me a lot about vibe coding regardless. I think this is a great initiative to teach coding to younger (or just inexperienced/new) people, and I hope more companies follow in the footsteps and dedicate a small amount of time to creating something similar to this tutorial.
+</p>
+</section>
+          </div>
+          <div class="right-col">
+            <section class="card link">
+<h2>Links</h2>
+<p><a href="https://hourofcode.com/au" target="_blank">Official Hour of Code page</a></p>
+<p><a href="https://lab.rosebud.ai/hour-of-code" target="_blank">Rosebud.ai's Hour of Code</a></p>
+</section>
+            <section class="card">
+<h2>Evidence</h2>
+<iframe allowfullscreen="" height="600" loading="lazy" src="https://rosebud.ai/p/ced7c87a-ea64-4558-a17a-56ee4c26f6e6" style="border: 1px solid #ccc; border-radius: 8px;" width="100%">
+</iframe>
+<img alt="Screenshot of LinkedIn course completion" src="images/event3_2.png"/>
+</section>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>Employability Profile — Submitted for Professional Practice III, University of Adelaide, by Sam Murray, a1195474</p>
+      </footer>
+    </main>
+  </div>
+  <script>
+    fetch('sidebar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('sidebar').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

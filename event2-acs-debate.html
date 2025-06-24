@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event 2: ACS Tech Debate</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .event-wrapper {
+      max-width: 1320px;
+      margin: 0;
+    }
+    .event-wrapper header {
+      border-bottom: 4px solid crimson;
+      padding-bottom: 1rem;
+      margin-bottom: 1.5rem;
+      max-width: 1320px;
+      margin-inline: auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      align-items: start;
+    }
+    .content-grid section.card img {
+      max-width: 100%;
+      height: auto;
+    }
+    @media (max-width: 800px) {
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <div id="sidebar"></div>
+    <main class="content">
+      <div class="event-wrapper">
+        <header>
+          <h1>Event 2: ACS Tech Debate</h1>
+          <p>Date: 10/06/2025</p>
+        </header>
+        <div class="content-grid">
+          <div class="left-col">
+            <section class="card">
+<h2>Summary</h2>
+<p>This was a tech debate hosted by the Australian Computer Society (ACS) between two teams of three students each. They debated two different topics (open-source vs proprietary and industry experience vs certifications) in front of a room of industry professionals and other students. I watched the debate live on Zoom, and participated in the voting at the end of each round. I found the contrast between the speakers very interesting - both teams had a mix of strong and weaker speakers, and it gave me an appreciation for what traits are important beyond Uni presentations. The two topics were thought invoking, and both boiled down to the same takeaway: we need both things, not just one or the other.</p>
+</section>
+            <section class="card">
+<h2>Additional Comments</h2>
+<p>This seemed like a pretty fun debate, although something I’d find slightly terrifying to do for fun. The topics seemed hard to me, very difficult to take a clear-cut stance on open-source vs closed-source, and especially on industry experience vs certifications. For both topics, we could not have one without the other. We need open-source to offer alternatives and keep closed-source in check, and we need closed-source to build upon various open-source software with a financial motivation. We need industry experience so that we can be comfortable and hands on with problem solving in our day to day life in the workforce, but we need certifications to prove some baseline level of competency and get ourselves into that workforce in the first place.
+
+There was a great contrast between the speakers as well. I question if the 3rd speaker’s were actually CS students, or perhaps they have a background in debating (they mentioned they weren’t very technical) but they were great speakers, very engaging.
+</p>
+</section>
+          </div>
+          <div class="right-col">
+            <section class="card link">
+<h2>Links</h2>
+<p><a href="https://www.acs.org.au/" target="_blank">ACS Homepage</a></p>
+</section>
+            <section class="card">
+<h2>Evidence</h2>
+<img alt="Booking" src="images/event2_1.png"/>
+<img alt="Zoom" src="images/event2_2.png"/>
+</section>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>Employability Profile — Submitted for Professional Practice III, University of Adelaide, by Sam Murray, a1195474</p>
+      </footer>
+    </main>
+  </div>
+  <script>
+    fetch('sidebar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('sidebar').innerHTML = data;
+      });
+  </script>
+</body>
+</html>
